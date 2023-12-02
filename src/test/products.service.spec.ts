@@ -1,10 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { NotFoundException } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { CreateProductDto, UpdateProductDto } from 'src/app/dtos';
-import { Product } from '../../src/app/models/entities/products.entity';
-import { ProductsService } from '../../src/app/products/products.service';
+import { Product } from '../app/models/entities/products.entity';
+import { ProductsService } from '../app/products/products.service';
 
 describe('ProductsService', () => {
   let productsService: ProductsService;
